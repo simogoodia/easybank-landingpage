@@ -1,0 +1,122 @@
+.digital-mockups {
+    position: relative;
+    background-color: #fafafa;
+    width: 100%;
+    height: 717px;
+}
+.digital-mockups .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(1, 1, 1, 0.4);
+    width: 100%;
+    height: 100%;
+    z-index: -9;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+.digital-mockups .overlay.show {
+    z-index: 9;
+    opacity: 1;
+}
+.digital-mockups .container .row {
+    display: flex;
+    align-items: center;
+}
+.digital-mockups .details .info h2 {
+    color: #63657A;
+}
+@media screen and (min-width: 992px) {
+    .digital-mockups .details .info h2 {
+        font-size: 70px;
+    }
+    .digital-mockups .details .info p {
+        font-size: 25px;
+    }
+}
+.digital-mockups .details .info p {
+    font-size: 25px;
+}
+.digital-mockups .details .info button {
+    position: relative;
+    cursor: pointer;
+}
+.digital-mockups .container .row .mockups {
+    position: relative;
+    height: 817px;
+}
+.digital-mockups .container .row .mockups img {
+    position: absolute;
+}
+.digital-mockups .container .row .mockups img:first-of-type {
+    height: 1070px;
+    width: 1150px;
+    top: -275px;
+    right: -100%;
+}
+.digital-mockups .container .row .mockups img:last-of-type {
+    width: 800px;
+    right: -70%;
+    top: -120px;
+}
+@media screen and (max-width: 991px) {
+    .digital-mockups {
+        width: 100%;
+        max-width: 100%;
+        height: 1000px;
+        overflow-x: hidden;
+    }
+    .digital-mockups .container {
+        padding: 0;
+        margin: 0;
+    }
+    .digital-mockups .container .row {
+        flex-direction: column-reverse;
+    }
+    .digital-mockups .container .row .mockups img {
+        width: 100%;
+        height: auto;
+        top: 0;
+        left: 0;
+        display: none;
+    }
+    .digital-mockups .container .row .mockups {
+        height: 440px;
+        text-align: center;
+        max-width: 100%;
+    }
+    .digital-mockups .container .row .mockups::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 98%;
+        background-image: url("../../../../images/bg-intro-mobile.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .digital-mockups .container .row .mockups::after {
+        content: "";
+        position: absolute;
+        top: -29%;
+        left: 50%;
+        transform: translateX(-48%);
+        width: 100%;
+        height: 100%;
+        background-image: url("../../../../images/image-mockups.png");
+        background-repeat: no-repeat;
+        background-size: 90%;
+    }
+    .digital-mockups .details {
+        padding: 0 15px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .digital-mockups .details h2 {
+        font-size: 35px;
+    }
+    .digital-mockups .details .info p {
+        font-size: 20px;
+    }
+}

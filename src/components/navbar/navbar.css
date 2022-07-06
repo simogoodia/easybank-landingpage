@@ -1,0 +1,75 @@
+.navbar {
+    position: relative;
+    z-index: 10;
+}
+button {
+    background: linear-gradient(to right, #31CE73 50%, #2EC2AB 100%);
+    opacity: 0.8;
+    transition: 0.3s opacity ease;
+}
+button:hover {
+    opacity: 1;
+}
+.navbar .nav a {
+    color: #D7D8DD;
+    transition: 0.3s ease-in-out;
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid transparent;
+}
+.navbar .nav a:not(:first-child) {
+    margin-left: 25px;
+}
+.navbar .bar {
+    display: none;
+}
+.navbar .nav a:hover {
+    color: #111;
+    border-bottom: 1px solid #31CE73;
+}
+.navbar button:active {
+    transform: scale(0.98);
+}
+@media screen and (max-width: 768px) {
+    .navbar button {
+        display: none;
+    }
+    .navbar .bar {
+        display: block;
+        cursor: pointer;
+    }
+    .navbar .nav {
+        display: block;
+        position: absolute;
+        background-color: #fff;
+        padding: 20px;
+        top: 160%;
+        width: 90%;
+        left: 50%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(-50%);
+        border-radius: 10px;
+        opacity: 0;
+        z-index: -999;
+        transition: 0.3s ease-in;
+    }
+    .navbar .nav.show {
+        opacity: 1;
+        z-index: 999;
+    }
+    .navbar .nav a {
+        padding: 0;
+        margin-bottom: 18px;
+        border: none;
+    }
+    .navbar .nav a:hover {
+        border: 0;
+    }
+    .navbar .nav a:not(:first-child) {
+        margin-left: 0;
+    }
+}

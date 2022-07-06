@@ -1,0 +1,33 @@
+.articles {
+    background: #fafafa;
+}
+.articles .content {
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+}
+.articles .content img {
+    width: 100%;
+}
+.articles .content .info {
+    padding: 20px;
+}
+.articles .content .info h6 {
+    font-size: 18px;
+}
+.articles .content .info h2 {
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.articles .content .info h2:hover {
+    color: #31CE73;
+}
+.articles p {
+    color: #c1c1c4;
+}
+@media screen and (max-width: 991px) {
+    .title h1 {
+        text-align: center;
+    }
+}

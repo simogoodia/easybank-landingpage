@@ -1,0 +1,14 @@
+.choose-bank {
+    background: #F4F5F7;
+}
+.title h1 {
+    color: #63657A;
+}
+.choose-bank p {
+    color: #c1c1c4;
+}
+@media screen and (max-width: 991px) {
+    .choose-bank {
+        text-align: center;
+    }
+}
